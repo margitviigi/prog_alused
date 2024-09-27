@@ -6,29 +6,27 @@ const rl = readline.createInterface({
 })
 
 rl.question('Kas soovite ise koha valida jah/ei? ', valik =>{
-    if (valik == jah){
-        console.log(rl.question('Kas soovite kohta akna ääres jah/ei?', aken =>{
-            if (aken == jah){
+    if (valik == 'jah'){
+        rl.question('Kas soovite kohta akna ääres jah/ei?', aken =>{
+            if (aken == 'jah'){
                 console.log('Valisite aknaäärase koha.')
             } 
-            if (aken == ei){
+            if (aken == 'ei'){
                 console.log('Valisite vahekäigupoolse koha.')
-            })
+            }
+        })
+    }
       
-    if(valik== ei){
+    if(valik== 'ei'){
         let loos = Math.ceil(Math.random()*3)
-        if (let == 1){
+        if (loos == 1){
             console.log('Teile loositi koht akna ääres.')
         } 
-        else if (let !== 1){
+        else if (loos !== 1){
             console.log('Teile loositi koht vahekäigu ääres.')
-        } 
-        })
-      }
-   })
-
-    
-        rl.close
-     
+        } rl.close
+        }
+      })
+        
     
      
