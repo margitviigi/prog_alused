@@ -14,19 +14,25 @@ rl.question('Kas soovite ise koha valida jah/ei? ', valik =>{
             if (aken == 'ei'){
                 console.log('Valisite vahekäigupoolse koha.')
             }
+            rl.close()
+
         })
-    }
+     
+    } 
       
-    if(valik== 'ei'){
+    if (valik== 'ei'){
         let loos = Math.ceil(Math.random()*3)
         if (loos == 1){
             console.log('Teile loositi koht akna ääres.')
         } 
         else if (loos !== 1){
             console.log('Teile loositi koht vahekäigu ääres.')
-        } rl.close
-        }
-      })
+        } 
+        rl.close() 
+     }
+
+});
+      
         
     
      
